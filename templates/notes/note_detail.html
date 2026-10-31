@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article class="single-note">
+    <h2>{{ note.title }}</h2>
+    <p class="note-content">{{ note.content|linebreaksbr }}</p>
+
+    <div class="actions">
+        <a class="button" href="{% url 'note_update' note.pk %}">Edit</a>
+        <a class="button danger" href="{% url 'note_delete' note.pk %}">Delete</a>
+        <a class="button secondary" href="{% url 'note_list' %}">Back</a>
+    </div>
+</article>
+{% endblock %}

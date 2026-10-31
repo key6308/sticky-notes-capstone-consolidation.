@@ -1,0 +1,20 @@
+digraph ClassDiagram {
+  graph [rankdir=LR, bgcolor="white", pad="0.35", nodesep="0.8", ranksep="1.0", labelloc=t, label="Sticky Notes Application - Class Diagram", fontsize=22, fontname="Arial"];
+  node [shape=plain, fontname="Arial"];
+  edge [fontname="Arial", fontsize=12, arrowsize=0.8];
+  StickyNote [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="8">
+      <TR><TD BGCOLOR="#F2F2F2"><B>StickyNote</B></TD></TR>
+      <TR><TD ALIGN="LEFT">id : Integer</TD></TR>
+      <TR><TD ALIGN="LEFT">title : String</TD></TR>
+      <TR><TD ALIGN="LEFT">content : Text</TD></TR>
+      <TR><TD ALIGN="LEFT">+ __str__() : String</TD></TR>
+    </TABLE>>];
+  StickyNoteForm [label=<
+    <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="8">
+      <TR><TD BGCOLOR="#F2F2F2"><B>StickyNoteForm</B></TD></TR>
+      <TR><TD ALIGN="LEFT">model = StickyNote</TD></TR>
+      <TR><TD ALIGN="LEFT">fields = title, content</TD></TR>
+    </TABLE>>];
+  StickyNoteForm -> StickyNote [label=" ModelForm uses", dir=back, arrowtail=vee, arrowhead=none];
+}

@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f1e8;
+    color: #222;
+}
+
+.site-header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.add-button,
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background: #222;
+    color: white;
+    font-size: 15px;
+}
+
+.add-button {
+    background: #f6d365;
+    color: #222;
+    font-weight: bold;
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.note-card {
+    background: #fff3a6;
+    padding: 20px;
+    min-height: 170px;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.15);
+    transform: rotate(-1deg);
+}
+
+.note-card:nth-child(even) {
+    transform: rotate(1deg);
+}
+
+.note-card h3 {
+    margin-top: 0;
+}
+
+.note-card a {
+    color: #222;
+    font-weight: bold;
+}
+
+.single-note,
+.form-card,
+.empty-state {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.note-content {
+    line-height: 1.7;
+    white-space: normal;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.danger {
+    background: #b42318;
+}
+
+.secondary {
+    background: #666;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    max-width: 650px;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}

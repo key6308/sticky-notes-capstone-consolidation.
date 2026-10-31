@@ -1,0 +1,14 @@
+CLASS DIAGRAM - STICKY NOTES APPLICATION
+
+StickyNote
+- id : Integer
+- title : String
+- content : Text
++ __str__() : String
+
+StickyNoteForm
+- model = StickyNote
+- fields = title, content
+
+Relationship:
+StickyNoteForm uses StickyNote as its Django ModelForm model.

@@ -1,0 +1,11 @@
+SEQUENCE DIAGRAM - CREATE A STICKY NOTE
+
+1. User opens Add Note.
+2. Browser sends GET /note/add/ to the Django View.
+3. Django View returns the note form.
+4. User enters the title and content.
+5. Browser sends the form with POST.
+6. Django View saves the note to the Database.
+7. Database confirms the note was saved.
+8. Django View redirects to the note list.
+9. Browser shows the notes page to the User.

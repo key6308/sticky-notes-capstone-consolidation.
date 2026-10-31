@@ -1,0 +1,11 @@
+USE CASE DIAGRAM - STICKY NOTES APPLICATION
+
+Actor: User
+
+User -> Create Note
+User -> View Notes
+User -> View Note
+User -> Update Note
+User -> Delete Note
+
+The User initiates each interaction with the Sticky Notes system.

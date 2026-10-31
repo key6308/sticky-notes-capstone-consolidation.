@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DJANGO_DEBUG: "1"
+      DJANGO_SECRET_KEY: "local-development-only-change-me"
+    volumes:
+      - .:/app
+    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"

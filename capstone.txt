@@ -1,0 +1,4 @@
+GitHub repository:
+https://github.com/key6308/sticky-notes-capstone-consolidation
+
+Important: Create this public repository on GitHub first, then upload the project files. This link will work once the repository exists.

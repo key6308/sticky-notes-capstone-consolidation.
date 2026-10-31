@@ -1,0 +1,15 @@
+digraph SequenceDiagram {
+  graph [rankdir=LR, bgcolor="white", pad="0.35", nodesep="0.45", ranksep="0.65", labelloc=t, label="Sticky Notes Application - Sequence Diagram (Create Note)", fontsize=22, fontname="Arial"];
+  node [shape=box, style="rounded,filled", fillcolor="#F2F2F2", fontname="Arial", fontsize=13];
+  edge [fontname="Arial", fontsize=11, arrowsize=0.8];
+  user [label="User"]; browser [label="Browser"]; view [label="Django View"]; db [label="Database"];
+  user -> browser [label="1. Open Add Note"];
+  browser -> view [label="2. GET /note/add/"];
+  view -> browser [label="3. Return note form"];
+  user -> browser [label="4. Enter title/content"];
+  browser -> view [label="5. POST form"];
+  view -> db [label="6. Save note"];
+  db -> view [label="7. Note saved"];
+  view -> browser [label="8. Redirect to note list"];
+  browser -> user [label="9. Show notes page"];
+}

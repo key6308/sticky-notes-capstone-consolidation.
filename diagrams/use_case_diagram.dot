@@ -1,0 +1,20 @@
+digraph UseCase {
+  graph [rankdir=LR, bgcolor="white", pad="0.35", nodesep="0.45", ranksep="0.7", labelloc=t, label="Sticky Notes Application - Use Case Diagram", fontsize=22, fontname="Arial"];
+  node [fontname="Arial", fontsize=14];
+  edge [fontname="Arial", fontsize=12, arrowsize=0.8];
+  user [shape=box, label="User", style="rounded,filled", fillcolor="#F2F2F2", width=1.4, height=0.7];
+  subgraph cluster_system {
+    label="Sticky Notes System"; fontsize=16; fontname="Arial"; style="rounded"; color="#777777";
+    create [shape=ellipse, label="Create Note"];
+    viewlist [shape=ellipse, label="View Notes"];
+    viewone [shape=ellipse, label="View Note"];
+    update [shape=ellipse, label="Update Note"];
+    delete [shape=ellipse, label="Delete Note"];
+    create -> viewlist [style=invis]; viewlist -> viewone [style=invis]; viewone -> update [style=invis]; update -> delete [style=invis];
+  }
+  user -> create [label=" initiates"];
+  user -> viewlist;
+  user -> viewone;
+  user -> update;
+  user -> delete;
+}
