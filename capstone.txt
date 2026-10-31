@@ -1,4 +1,8 @@
-GitHub repository:
-https://github.com/key6308/sticky-notes-capstone-consolidation
+Capstone Project - Consolidation
 
-Important: Create this public repository on GitHub first, then upload the project files. This link will work once the repository exists.
+Public GitHub Repository:
+https://github.com/key6308/sticky-notes-capstone-consolidation.
+
+This repository contains my Django Sticky Notes application, automated tests, Sphinx documentation, Docker configuration, and Git version control work.
+
+The documentation and container branches have been merged into the main branch.
